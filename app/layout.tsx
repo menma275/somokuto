@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description,
     site: '@menma275',
     creator: '@menma275',
-    image: {
+    images: {
       url: `${url}og.jpg`,
       width: 1200,
       height: 630,
