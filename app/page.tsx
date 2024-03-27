@@ -16,7 +16,7 @@ export default function Home() {
     somokuto.map((line, index) => {
       const p = document.createElement('p');
       p.textContent = line;
-      p.className = "h-full text-center text-white text-md  tracking-[7px]";
+      p.className = "scroll-snap-item h-dvh text-center text-white text-md tracking-[7px]";
       p.style.writingMode = "vertical-rl";
       p.style.scrollSnapAlign = "start";
       haiku.appendChild(p);
