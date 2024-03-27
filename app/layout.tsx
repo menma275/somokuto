@@ -6,9 +6,34 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 const shippori = Shippori_Mincho({ subsets: ["latin", "latin-ext"],  weight: ["400", "500", "600", "700"]});
 
+const siteName = "種田山頭火 草木塔";
+const description = "種田山頭火 草木塔 / Fire on the Mountain by Taneda Santoka";
+const url = "https://somokuto.vercel.app/";
+
 export const metadata: Metadata = {
-  title: "種田山頭火 草木塔",
-  description: "種田山頭火 草木塔 / Fire on the Mountain by Taneda Santoka",
+  title:{
+    default: siteName,
+    template: `%s - ${siteName}`,
+  },
+  description: description,
+  openGraph: {
+    title: siteName,
+    description,
+    url,
+    siteName,
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteName,
+    description,
+    site: '@menma275',
+    creator: '@menma275',
+  },
+  alternates: {
+    canonical: url,
+  },
 };
 
 export default function RootLayout({
