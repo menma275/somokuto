@@ -24,7 +24,7 @@ export default function Home() {
   }
   
   return (
-    <main className="flex min-h-screen cursor-default">
+    <main className="flex min-h-dvh cursor-default">
       <div className='fixed w-full h-full py-0 sm:py-24 -z-50'>
         <img src={"mountain.jpg"} alt="background" className="w-full h-full object-cover sm:object-contain" />
       </div>
@@ -42,9 +42,9 @@ export default function Home() {
         </div>
       </div>
       {/* jsonファイルから1行ずつ読み込んで表示 */}
-      <div className="flex flex-col items-center justify-center w-full h-full p-4 gap-96 haiku">
+      <div className="flex flex-col items-center justify-center w-full p-4 gap-96 haiku">
         {somokuto.map((line, index) => (
-          <p key={index} className="scroll-snap-item h-full text-center text-white text-md tracking-[7px]"  style={{writingMode:"vertical-rl"}}>{line}</p>
+          <p key={index} className="scroll-snap-item h-dvh text-center text-white text-md tracking-[7px]"  style={{writingMode:"vertical-rl"}}>{line}</p>
         ))}
       </div>
     </main>
