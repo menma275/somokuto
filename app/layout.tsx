@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     siteName,
     locale: 'ja_JP',
     type: 'website',
+    images: [
+      {
+        url: `${url}og.jpg`,
+        width: 1200,
+        height: 630,
+        alt: siteName,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -30,6 +38,12 @@ export const metadata: Metadata = {
     description,
     site: '@menma275',
     creator: '@menma275',
+    image: {
+      url: `${url}og.jpg`,
+      width: 1200,
+      height: 630,
+      alt: siteName,
+    },
   },
   alternates: {
     canonical: url,
