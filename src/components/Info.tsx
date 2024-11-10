@@ -60,7 +60,7 @@ const Info = () => {
                   <td>
                     <a
                       className="underline"
-                      href="https://www.aozora.gr.jp/cards/000146/files/749_34457.html"
+                      href="https://github.com/menma275/somokuto"
                     >
                       GitHub
                     </a>

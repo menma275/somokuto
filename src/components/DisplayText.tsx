@@ -31,7 +31,7 @@ const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
   };
 
   useEffect(() => {
-    if (somokuto?.somokuto?.length > 0) setListLen(somokuto.somokuto.length);
+    if (somokuto?.length > 0) setListLen(somokuto.length);
   }, [somokuto]);
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
       >
         <p>Random</p>
         <p className="w-fit">
-          {count} / {listLen}
+          {count + 1} / {listLen}
         </p>
       </button>
       <div className="w-full h-full cursor-default bg-transparent">
@@ -85,7 +85,7 @@ const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
           }}
           className="vertical-rl tracking-[0.5rem] fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 whitespace-nowrap"
         >
-          {somokuto?.somokuto[count]}
+          {somokuto?.[count]}
         </motion.p>
       </div>
     </div>

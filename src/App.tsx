@@ -17,7 +17,7 @@ function App() {
               草木塔
             </h1>
           </div>
-          <DisplayText somokuto={somokuto} />
+          <DisplayText somokuto={somokuto.somokuto} />
         </div>
       </div>
     </>
