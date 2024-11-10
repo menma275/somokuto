@@ -39,6 +39,7 @@ const Info = () => {
                     <a
                       className="underline"
                       href="https://ja.wikipedia.org/wiki/%E7%A8%AE%E7%94%B0%E5%B1%B1%E9%A0%AD%E7%81%AB"
+                      target="_blank"
                     >
                       種田山頭火
                     </a>
@@ -50,6 +51,7 @@ const Info = () => {
                     <a
                       className="underline"
                       href="https://www.aozora.gr.jp/cards/000146/files/749_34457.html"
+                      target="_blank"
                     >
                       青空文庫
                     </a>
@@ -61,6 +63,7 @@ const Info = () => {
                     <a
                       className="underline"
                       href="https://github.com/menma275/somokuto"
+                      target="_blank"
                     >
                       GitHub
                     </a>
