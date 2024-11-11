@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import { Data } from "../types/data";
 
 const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState<number>(() => {
+    const savedCount = localStorage.getItem("count");
+    return savedCount ? Number(savedCount) : 0;
+  });
   const [listLen, setListLen] = useState<number>(0);
   const [lastSwitchTime, setLastSwitchTime] = useState<number>(Date.now());
 
@@ -29,6 +32,10 @@ const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
     const randomNum = Math.floor(Math.random() * listLen);
     setCount(randomNum);
   };
+
+  useEffect(() => {
+    localStorage.setItem("count", count.toString());
+  }, [count]);
 
   useEffect(() => {
     if (somokuto?.length > 0) setListLen(somokuto.length);
