@@ -55,9 +55,9 @@ const DisplayText: React.FC<Data> = ({ somokuto }: Data) => {
       const touchStartX = event.touches[0].clientX;
       const screenWidth = window.innerWidth;
       if (touchStartX > screenWidth / 2) {
-        switchText("next");
-      } else {
         switchText("prev");
+      } else {
+        switchText("next");
       }
     };
 

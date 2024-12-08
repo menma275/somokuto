@@ -37,13 +37,13 @@ const Toast = () => {
               <div className="flex gap-1 justify-between">
                 <p>Next</p>
                 <p className="bg-neutral-200  px-2 py-0.5 rounded-md">
-                  {isTouchDevice ? "Tap Right" : "Swipe Up"}
+                  {isTouchDevice ? "Tap Left" : "Swipe Up"}
                 </p>
               </div>
               <div className="flex gap-1 justify-between">
                 <p>Previous</p>
                 <p className="bg-neutral-200  px-2 py-0.5 rounded-md">
-                  {isTouchDevice ? "Tap Left" : "Swipe Down"}
+                  {isTouchDevice ? "Tap Right" : "Swipe Down"}
                 </p>
               </div>
             </div>
